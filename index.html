@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Compu Global Hyper Mega Net</title>
+  </head>
+  <body>
+    <main>
+      <div class="product">
+        <img src="assets/img/laptop.webp" alt="laptop">
+        <div class="name">
+          Lenovo ThinkPad X1 Carbon
+        </div>
+        <div class="price">
+          $<span>1.300.000</span>
+        </div>
+        <div>
+          <label for="quantity">Quantity: </label>
+          <input type="number" id="quantity" name="quantity" value="0" min="0" placeholder="1">
+          <small></small>
+        </div>
+        <div>
+          <label for="laptop-color">Color: </label>
+          <input type="text" id="laptop-color" name="laptop-color" placeholder="darkblue or #fff000">
+          <small></small>
+        </div>
+        <div>
+          <button type="button" id="btn-calculate" onclick="calculate()">Calculate</button>
+        </div>
+      </div>
+      <div class="calculator">
+        <div class="total-price" id="total-price">
+        </div>
+        <div class="laptop-count" id="laptop-count">
+        </div>
+        <div class="color-container">
+          <div>Selected color: </div>
+          <div class="color-sample" id="color-sample"></div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

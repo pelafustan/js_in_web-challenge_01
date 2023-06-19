@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0pt;
+  padding: 0pt;
+}
+
+main {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "product calculator";
+  grid-template-columns: 1fr 1fr;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+label {
+  margin-bottom: 0.75rem;
+}
+
+form, .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 4rem;
+  row-gap: 1.25rem;
+}
+
+.product {
+  grid-area: product;
+  color: #d4f0f7;
+  background-color: #414c6b;
+  row-gap: 2rem;
+}
+
+.product img {
+  max-width: 75%;
+}
+
+.name {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+
+.price {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #eeeeee;
+}
+
+.calculator {
+  grid-area: calculator;
+}
+
+.color-container {
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.color-sample {
+  background-Color: #eee;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+#btn-calculate {
+  border: none;
+  color: #eeeeee;
+  background-color: #b8cfec;
+  padding: 0.5rem 1.2rem;
+}
